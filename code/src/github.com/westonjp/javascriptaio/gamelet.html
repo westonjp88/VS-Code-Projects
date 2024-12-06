@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #output{
+            background-color: red;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            position: relative;
+        }
+
+        .world {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  width: 400px;
+  height: 400px;
+}
+.world:focus-visible {
+  outline: 5px solid dodgerblue;
+}
+#spaceship {
+  fill: orange;
+  stroke: red;
+  stroke-width: 2px;
+}
+        
+    </style>
+</head>
+<body>
+
+    <div id="output"></div>
+    <script src="ball.js"></script>
+    
+    <p>Use the WASD (ZQSD on AZERTY) keys to move and steer.</p>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      class="world"
+      tabindex="0">
+      <polygon id="spaceship" points="15,0 0,30 30,30" />
+    </svg>
+
+</body>
+</html>
